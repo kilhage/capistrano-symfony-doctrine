@@ -6,7 +6,7 @@ namespace :symfony do
         invoke "symfony:console", "doctrine:migrations:migrate", fetch(:symfony_doctrine_migrations_flags)
       end
     end
-    namespace :doctrine do
+    namespace :cache do
       desc "Run app/console doctrine:cache:clear-metadata"
       task :clear_metadata do
         on roles fetch(:symfony_doctrine_cache_clear_metadata_roles) do

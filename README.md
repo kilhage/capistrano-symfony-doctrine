@@ -33,9 +33,9 @@ require 'capistrano/symfony-doctrine'
 Configure in deploy.rb to execute the tasks:
 
 ```ruby
-before 'deploy:updated', 'symfony:cache:clear_metadata'
-before 'deploy:updated', 'symfony:cache:clear_query'
-before 'deploy:updated', 'symfony:cache:clear_result'
+before 'deploy:updated', 'symfony:doctrine:cache:clear_metadata'
+before 'deploy:updated', 'symfony:doctrine:cache:clear_query'
+before 'deploy:updated', 'symfony:doctrine:cache:clear_result'
 before 'deploy:updated', 'symfony:doctrine:migrations'
 ```
 
