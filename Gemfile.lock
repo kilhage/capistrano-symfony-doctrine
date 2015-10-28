@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    capistrano-symfony-doctrine (0.2.0)
+    capistrano-symfony-doctrine (0.2.1)
       capistrano (>= 3.1.0)
       capistrano-symfony (>= 0.4.0)
 

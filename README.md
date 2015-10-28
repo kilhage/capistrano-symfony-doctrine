@@ -1,6 +1,8 @@
 # Capistrano::Symfony::Doctrine
 
-doctrine support for Capistrano 3.x
+doctrine migrations & cache clearing support for Capistrano 3.x
+
+Makes it possible to run doctrine migrations and clear metadata, query & result cache
 
 ## Installation
 
