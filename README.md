@@ -36,22 +36,20 @@ Configure in deploy.rb to execute the tasks:
 before 'deploy:updated', 'symfony:cache:clear_metadata'
 before 'deploy:updated', 'symfony:cache:clear_query'
 before 'deploy:updated', 'symfony:cache:clear_result'
-
 before 'deploy:updated', 'symfony:doctrine:migrations'
 ```
 
 ### Configurable options:
 
 ```ruby
-set :symfony_doctrine_migrations_flags, '--no-interaction'
-set :symfony_doctrine_migrations_roles, :db
-
 set :symfony_doctrine_cache_clear_metadata_flags, '--=env=prod'
 set :symfony_doctrine_cache_clear_metadata_roles, :db
 set :symfony_doctrine_cache_clear_query_flags, '--=env=prod'
 set :symfony_doctrine_cache_clear_query_roles, :db
 set :symfony_doctrine_cache_clear_result_flags, '--=env=prod'
 set :symfony_doctrine_cache_clear_result_roles, :db
+set :symfony_doctrine_migrations_flags, '--no-interaction'
+set :symfony_doctrine_migrations_roles, :db
 ```
 
 ## Development
