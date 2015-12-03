@@ -1,5 +1,7 @@
 # Capistrano::Symfony::Doctrine
 
+[![Gem Version](https://badge.fury.io/rb/capistrano-symfony-doctrine.svg)](https://badge.fury.io/rb/capistrano-symfony-doctrine)
+
 doctrine migrations & cache clearing support for Capistrano 3.x
 
 Makes it possible to run doctrine migrations and clear metadata, query & result cache
