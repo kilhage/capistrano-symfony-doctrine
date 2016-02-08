@@ -3,26 +3,26 @@ namespace :symfony do
     desc "Run app/console doctrine:migrations:migrate"
     task :migrations do
       on fetch(:symfony_doctrine_migrations_servers) do
-        execute "cd '#{release_path}'; app/console doctrine:migrations:migrate", fetch(:symfony_doctrine_migrations_flags)
+        execute "cd '#{release_path}'; app/console doctrine:migrations:migrate #{fetch(:symfony_doctrine_migrations_flags)}"
       end
     end
     namespace :cache do
       desc "Run app/console doctrine:cache:clear-metadata"
       task :clear_metadata do
         on fetch(:symfony_doctrine_cache_clear_metadata_servers) do
-          execute "cd '#{release_path}'; app/console doctrine:cache:clear-metadata", fetch(:symfony_doctrine_cache_clear_metadata_flags)
+          execute "cd '#{release_path}'; app/console doctrine:cache:clear-metadata #{fetch(:symfony_doctrine_cache_clear_metadata_flags)}"
         end
       end
       desc "Run app/console doctrine:cache:clear-query"
       task :clear_query do
         on fetch(:symfony_doctrine_cache_clear_query_servers) do
-          execute "cd '#{release_path}'; app/console doctrine:cache:clear-query", fetch(:symfony_doctrine_cache_clear_query_flags)
+          execute "cd '#{release_path}'; app/console doctrine:cache:clear-query #{fetch(:symfony_doctrine_cache_clear_query_flags)}"
         end
       end
       desc "Run app/console doctrine:cache:clear-result"
       task :clear_result do
         on fetch(:symfony_doctrine_cache_clear_result_servers) do
-          execute "cd '#{release_path}'; app/console doctrine:cache:clear-result", fetch(:symfony_doctrine_cache_clear_result_flags)
+          execute "cd '#{release_path}'; app/console doctrine:cache:clear-result #{fetch(:symfony_doctrine_cache_clear_result_flags)}"
         end
       end
     end
