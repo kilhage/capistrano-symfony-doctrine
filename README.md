@@ -29,6 +29,7 @@ Or install it yourself as:
 Require in Capfile to use the default task:
 
 ```ruby
+require 'capistrano/symfony'
 require 'capistrano/symfony-doctrine'
 ```
 
@@ -38,7 +39,7 @@ Configure in deploy.rb to execute the tasks:
 before 'deploy:updated', 'symfony:doctrine:cache:clear_metadata'
 before 'deploy:updated', 'symfony:doctrine:cache:clear_query'
 before 'deploy:updated', 'symfony:doctrine:cache:clear_result'
-before 'deploy:updated', 'symfony:doctrine:migrations'
+after  'deploy:updated', 'symfony:doctrine:migrations'
 ```
 
 ### Configurable options:
