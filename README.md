@@ -42,6 +42,14 @@ before 'deploy:updated', 'symfony:doctrine:cache:clear_result'
 after  'deploy:updated', 'symfony:doctrine:migrations'
 ```
 
+The server that you want to execute this script on must have the role **db**. The reason for this is because you might be having multiple web nodes but you only want to execute this on one of the nodes!
+
+```ruby
+    server 'node1.example.com', user: 'root', roles: %w{web db}
+    server 'node2.example.com', user: 'root', roles: %w{web}
+    server 'node3.example.com', user: 'root', roles: %w{web}
+```
+
 ### Configurable options:
 
 ```ruby
