@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    capistrano-symfony-doctrine (0.2.8)
+    capistrano-symfony-doctrine (0.2.9)
       capistrano (>= 3.1.0)
       capistrano-symfony (>= 0.4.0)
 
@@ -23,9 +23,9 @@ GEM
     i18n (0.7.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (3.0.2)
+    net-ssh (3.2.0)
     rake (10.4.2)
-    sshkit (1.8.1)
+    sshkit (1.11.2)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
 
@@ -38,4 +38,4 @@ DEPENDENCIES
   rake (~> 10.0)
 
 BUNDLED WITH
-   1.10.5
+   1.12.5
