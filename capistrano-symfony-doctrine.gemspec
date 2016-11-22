@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano-symfony-doctrine"
-  spec.version       = '0.2.9'
+  spec.version       = '0.2.10'
   spec.authors       = ["Emil Kilhage"]
   spec.email         = ["emil.kilhage@glooby.com"]
 
   spec.summary       = %q{doctrine migrations & cache clearing support for Capistrano 3.x}
   spec.description   = %q{doctrine migrations & cache clearing support for Capistrano 3.x}
-  spec.homepage      = "https://github.com/glooby/capistrano-symfony-doctrine"
+  spec.homepage      = "https://www.glooby.se"
   spec.license       = "MIT"
 
   if spec.respond_to?(:metadata)
