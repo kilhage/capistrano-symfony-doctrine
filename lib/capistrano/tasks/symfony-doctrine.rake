@@ -31,7 +31,7 @@ end
 
 namespace :load do
   task :defaults do
-    set :symfony_doctrine_migrations_flags, '--no-interaction --no-debug'
+    set :symfony_doctrine_migrations_flags, '--allow-no-migration --no-interaction --no-debug'
     set :symfony_doctrine_migrations_roles, :db
     set :symfony_doctrine_migrations_servers, -> { release_roles(fetch(:symfony_doctrine_migrations_roles)) }
     set :symfony_doctrine_cache_clear_metadata_flags, '--no-debug'
