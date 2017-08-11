@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano-symfony-doctrine"
-  spec.version       = '0.2.10'
+  spec.version       = '0.2.11'
   spec.authors       = ["Emil Kilhage"]
   spec.email         = ["emil.kilhage@glooby.com"]
 
